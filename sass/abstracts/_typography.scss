@@ -1,0 +1,36 @@
+.font{
+    &-xsmall{
+        font-size:12px;
+    }
+    &-small{
+        font-size:14px;
+    }
+    &-normal{
+        font-size:15px;
+    }
+    &-medium{
+        font-size:18px;
+    }
+    &-large{
+        font-size:36px;
+    }
+}
+
+.fw{
+    &-bold{
+        font-weight:600;
+    }
+}
+
+.lh{
+
+    &-small{
+        line-height: 1.50;
+    }
+    &-normal{
+        line-height: 1.75;
+    }
+    &-medium{
+        line-height:2;
+    }
+}

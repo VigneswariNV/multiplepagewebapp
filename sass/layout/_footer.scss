@@ -1,0 +1,43 @@
+footer{
+    padding: 48px 150px 85px 150px;
+    background-color: $footerbg;
+
+    nav{
+        justify-content: space-between;
+        dt{
+            color:$navcolor;
+            margin-bottom:15px;
+            span{
+                color:$lightblue;
+            }
+        }
+        dd{
+            color:$grey;
+        }
+    }
+
+    .contacts{
+                a{
+                    color:$grey;
+                   margin-top:12px;
+                }
+        }
+        .contact-logo{
+            width:140px;
+            justify-content: space-between;
+            margin-top:15px;
+        }
+    }
+    .description{
+        dd{
+        color:$navcolor;
+        }
+    }
+    p{
+        padding-top:70px;
+        color:$copyright;
+    }
+.fa{
+   font-size:14px;
+   margin-right:10px;
+}

@@ -1,0 +1,33 @@
+header{
+padding:10px 20px;
+nav{
+justify-content: space-between;
+
+.logopannel,.details{
+    ul{
+        align-items: center;
+        li{
+            margin-right:40px;
+            color:$navcolor; 
+         }
+}
+}
+.profile-options{
+    align-items: center;
+    .profile{
+        ul{
+            align-items: center;
+            li{
+                margin-right:24px;
+            }
+            .name{
+                li{
+                    margin-right:12px;
+                    color:$dark;
+                }
+            }
+        }
+    }
+}
+}
+}

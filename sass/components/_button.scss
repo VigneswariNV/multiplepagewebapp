@@ -1,0 +1,14 @@
+button{
+    outline:none;
+    cursor:pointer;
+}
+
+.primary-button{
+    width: 180px;
+    padding: 14px 0 15px 0;
+    color:$white;
+    border-radius: 2px;
+    background-color: $lightblue;
+    border:none;
+    font-family: inherit;
+}
