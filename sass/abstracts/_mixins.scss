@@ -1,3 +1,12 @@
 @mixin border($value,$type,$color){
     border:$value $type $color;
 }
+
+@mixin size($value){
+    width:$value;
+    height:$value;
+}
+
+@mixin bg($value){
+    background-color: $value;
+}

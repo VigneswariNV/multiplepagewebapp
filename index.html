@@ -57,25 +57,950 @@
         </nav>
     </header>
 
-    <main>
-        <section class="register ta-center">
+    <main class="display-f">
+
+        <section class="register tab ta-center container">
             <h1 class="font-large">
-                I'll get you an awesome price <br> in seconds. Ready to go?
+                I'll get you an awesome price in seconds. Ready to go?
             </h1>
 
             <form class="font-small display-f">
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
+                <input id="fname" type="text" placeholder="First name">
+                <input id="lname" type="text" placeholder="Last name">
             </form>
-            <button type="submit" class="primary-button font-small" href="javascript.void(0)">NEXT</button>
+            <button id="btn" type="submit" class="primary-button next-btn font-small"
+                href="javascript.void(0)">NEXT</button>
 
         </section>
+
+
+        <section class="details-form tab display-n container">
+            <div class="basic-intro">
+                <h2 class="font-large fw-bold">Fill the form on<br> the right</h2>
+
+                <p class="font-small lh-normal">Fusce dapibus, tellus ac cursus commodo,<br> tortor mauris condimentum
+                    nibh.</p>
+
+                <form>
+                    <label class="font-xsmall">DATE OF BIRTH</label><br>
+
+                    <div class="input-container form-input">
+                        <img class="f-left" src="images/mail-outline.png">
+                        <input class="input-text" type="date">
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="main-form">
+
+                <div class="basic">
+                    <div class="input-container form-input">
+                        <img class="f-left" src="images/location.png">
+                        <input id="address" class="input-text font-small" placeholder="Enter the exact address">
+                    </div>
+
+                    <div class="input-container form-input">
+                        <img class="f-left" src="images/mail-outline.png">
+                        <input id="email" class="input-text font-small" placeholder="Email address">
+                    </div>
+
+                    <div class="options form-input ">
+
+                        <label class="check-box " for="check-box1">
+                            <input  type="checkbox" name="box" id="check-box1">
+                            <span class="checkmark greyborder"></span>
+                            <span class="checksign"></span>
+                        </label>
+                        <span class="font-small input-value">Condo</span>
+
+                    </div>
+
+                    <div class="options form-input ">
+                        <label class="check-box " for="check-box2">
+                            <input  name="box" type="checkbox" id="check-box2">
+                            <span class="checkmark greyborder"></span>
+                            <span class="checksign"></span>
+                        </label>
+                        <span class="font-small input-value">Co-op</span>
+
+                    </div>
+
+                    <div class="options form-input ">
+
+                        <label class="check-box " for="check-box3">
+                            <input  class="display-n" name="box" type="checkbox" id="check-box3">
+                            <span class="checkmark greyborder"></span>
+                            <span class="checksign"></span>
+                        </label>
+                        <span class="font-small input-value">House</span>
+
+                    </div>
+
+                    <div class="form-input timelimit font-small">
+                        <label for="time-limit"> </label>
+                        <input list="time-limits" id="time-limit">
+                        <datalist id="time-limits">
+                            <option value="This month">
+                            <option value="Next month">
+                            <option value="December 2021">
+                            <option value="January 2022">
+                            <option value="I don't know">
+                        </datalist>
+
+                    </div>
+                </div>
+
+
+                <div class="alarm ">
+
+                    <div class="alarm-boxes  display-f">
+                        <div class="box1 greyborder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="48" viewBox="0 0 46 48">
+                                <g id="img1" fill="#212B36" fill-rule="nonzero">
+                                    <path
+                                        d="M21.353 27.266h3.294a.775.775 0 0 0 .771-.778.775.775 0 0 0-.771-.777h-3.294a.775.775 0 0 0-.771.777c0 .43.345.778.771.778z" />
+                                    <path
+                                        d="M42.843 35.2a.78.78 0 0 0-.068-.031l-5.847-2.267a2.187 2.187 0 0 1-1.288-1.358l-.234-.708c1.309-1.894 1.813-3.753.585-5.609-.556-.84-1.24-1.445-2.083-1.844.367-1.373.566-2.838.566-4.36v-.051h.052c.88 0 1.595-.72 1.595-1.607v-1.659a1.61 1.61 0 0 0-.823-1.405v-1.912C35.298 5.558 29.78 0 23 0c-6.78 0-12.298 5.558-12.298 12.389V14.3a1.61 1.61 0 0 0-.823 1.405v1.659c0 .886.716 1.607 1.595 1.607h.052v.052c0 1.521.2 2.986.566 4.36-.843.398-1.527 1.003-2.083 1.843-1.228 1.856-.724 3.715.585 5.609l-.234.708a2.186 2.186 0 0 1-1.288 1.358L3.225 35.17a.737.737 0 0 0-.068.03A5.727 5.727 0 0 0 0 40.346v5.218A2.43 2.43 0 0 0 2.418 48h41.164A2.43 2.43 0 0 0 46 45.564v-5.218a5.727 5.727 0 0 0-3.157-5.147zm-8.136-9.11c.45.68.818 1.698-.344 3.536-.604.954-1.51 1.968-2.547 3.03a.876.876 0 0 1-.635-.847v-2.833a.787.787 0 0 0-.007-.104 14.535 14.535 0 0 0 2.254-3.99c.506.276.92.666 1.279 1.208zm-21.293-3.8h.19c.544 0 1.055.213 1.442.602a3.543 3.543 0 0 0 2.53 1.056h10.847c.956 0 1.855-.375 2.533-1.058.385-.387.896-.6 1.44-.6h.19c-1.145 5.309-5.008 9.226-9.586 9.226s-8.441-3.917-9.586-9.227zm2.266 11.217a2.437 2.437 0 0 0 .682-1.698v-1.333c1.875 1.634 4.167 2.595 6.638 2.595s4.763-.961 6.638-2.595v1.333c0 .655.255 1.256.682 1.697-2.245 1.413-4.764 2.157-7.32 2.157s-5.075-.744-7.32-2.156zM23 37.218a14.95 14.95 0 0 0 5.169-.93c-2.107 2.157-4.113 4.498-5.169 7.12-1.056-2.622-3.062-4.963-5.169-7.12 1.664.612 3.407.93 5.169.93zm11.577-19.853a.052.052 0 0 1-.051.052h-1.698v-1.763h1.698c.028 0 .051.024.051.052v1.659zm-5.866.052v-1.763h2.573v1.763h-2.573zm-4.94 0v-1.763h3.397v1.763h-3.396zm-4.939 0v-1.763h3.396v1.763h-3.396zm-4.116 0v-1.763h2.573v1.763h-2.573zm14.922-3.318h-3.396v-1.71c0-3.155-.263-6.128-.74-8.374a14.478 14.478 0 0 0-.547-1.973c.973.497 1.874 1.364 2.635 2.557 1.32 2.07 2.048 4.836 2.048 7.79v1.71zm-8.336 0v-1.71c0-2.814.218-5.512.615-7.595.4-2.095.86-2.944 1.083-3.186.222.242.684 1.091 1.083 3.186.397 2.083.615 4.78.615 7.595v1.71h-3.396zm-.257-12.056c-.2.544-.382 1.2-.546 1.973-.478 2.245-.74 5.218-.74 8.373v1.71h-3.397v-1.71c0-2.954.728-5.72 2.048-7.79.761-1.193 1.662-2.06 2.635-2.556zm12.709 10.346v1.71H31.18v-1.71c0-3.249-.814-6.314-2.292-8.631-.17-.267-.348-.52-.531-.76a10.855 10.855 0 0 1 5.396 9.39zM17.642 2.998c-.183.24-.36.493-.53.76-1.479 2.317-2.293 5.382-2.293 8.63V14.1h-2.573v-1.71c0-4.01 2.174-7.518 5.396-9.391zm-6.22 14.367v-1.659c0-.028.024-.052.052-.052h1.698v1.763h-1.698a.052.052 0 0 1-.051-.052zm6.692 1.607l-.002.052v.83c0 .429.345.777.772.777a.775.775 0 0 0 .771-.778v-.83l-.002-.051h6.694l-.002.052v.83c0 .429.345.777.771.777a.775.775 0 0 0 .772-.778v-.83l-.002-.051h5.045v.052c0 .58-.033 1.15-.094 1.71h-.441c-.956 0-1.855.375-2.533 1.059-.385.387-.896.6-1.44.6H17.577a2.017 2.017 0 0 1-1.442-.603 3.543 3.543 0 0 0-2.53-1.056h-.442c-.061-.56-.094-1.13-.094-1.71v-.052h5.045zm-6.82 7.118c.358-.542.772-.932 1.279-1.208a14.535 14.535 0 0 0 2.254 3.99.787.787 0 0 0-.008.104v2.833a.876.876 0 0 1-.634.847c-1.037-1.061-1.944-2.076-2.548-3.03-1.162-1.838-.794-2.855-.344-3.536zm-9.75 19.474v-5.218a4.18 4.18 0 0 1 2.272-3.74l5.81-2.252a3.727 3.727 0 0 0 2.105-2.07c.91 1.05 1.992 2.114 3.093 3.195 3.267 3.21 6.944 6.825 7.364 10.966H9.776v-2.54a.775.775 0 0 0-.772-.777.775.775 0 0 0-.771.777v2.54H2.418a.879.879 0 0 1-.874-.881zm42.912 0a.879.879 0 0 1-.874.88h-5.815v-2.539a.775.775 0 0 0-.771-.778.775.775 0 0 0-.772.778v2.54H23.812c.42-4.141 4.096-7.755 7.364-10.966 1.1-1.081 2.183-2.144 3.093-3.195a3.727 3.727 0 0 0 2.105 2.07l5.81 2.252a4.18 4.18 0 0 1 2.272 3.74v5.218z" />
+                                </g>
+                            </svg>
+
+                            <div class="alarm-check">
+
+                                <label class="check-box " for="check-box4">
+                                    <input class="display-n" type="checkbox" id="check-box4">
+                                    <span onclick="img1.style.fill='#4ad5f6';" class="checkmark box-alarm greyborder"></span>
+                                    <span class="checksign1"></span>
+                                </label>
+                                <span class="font-small input-value">Burglar alarm</span>
+                            </div>
+                        </div>
+
+                        <div class="box1 greyborder ">
+                            <svg id="img2" xmlns="http://www.w3.org/2000/svg" width="36" height="48" viewBox="0 0 36 48">
+                                <text fill="#212B36" fill-rule="evenodd"
+                                    font-family="FontAwesome5ProLight, Font Awesome 5 Pro" font-size="48"
+                                    font-weight="300" transform="translate(-82 -35)">
+                                    <tspan x="82" y="77"></tspan>
+                                </text>
+                            </svg>
+
+
+                            <div class="alarm-check">
+                                <label class="check-box " for="check-box5">
+                                    <input class="display-n" type="checkbox" id="check-box5">
+                                    <span onclick="img2.style.fill='#4ad5f6';" class="checkmark box-alarm greyborder"></span>
+                                    <span class="checksign1"></span>
+                                </label>
+                                <span class="font-small input-value">Burglar alarm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="submit-buttons display-f">
+
+                        <button id="p-btn1" type="submit" class="primary-button prev-btn font-small"
+                            href="javascript.void(0)">BACK</button>
+                        <button id="n-btn1" type="submit" class="primary-button next-btn font-small"
+                            href="javascript.void(0)">NEXT</button>
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <section class="documents display-n container">
+            <h2 class="font-large fw-bold ta-center">Few more step ahead<br>
+                upload your ID Document 👆</h2>
+
+            <div class="tabs ta-center">
+                <button class="secondary-button bg-grey font-xsmall">PHOTO IDENTIFICATION</button><button
+                    class="secondary-button bg-white font-xsmall">PROOF OF ADDRESS</button>
+            </div>
+
+            <div class="upload-box">
+                <p class="font-medium ta-center">Upload photo Indentification</p>
+
+                <div class="drag-drop display-f ">
+
+                    <div class="files ta-center  ">
+                        <img src="images/upload-icon.png">
+                        <p class="font-medium">Drag files here to upload or<br>
+                            <label class="blue" for="upload-file">select a file
+                                <input onchange="myFunction()" id="upload-file" type="file" multiple size="50">
+                            </label>
+                            from your device
+                        </p>
+
+                        <p class="font-small criteria">JPG, PNG or PDF only, maximum file size - 5MB</p>
+                    </div>
+
+                    <div class="doc-rules ">
+                        <p class="font-small ta-left">YOUR DOCUMENTS MUST BE:</p>
+                        <ul class="font-medium">
+                            <li>A Government issued
+                                <ul class="font-normal">
+                                    <li>Passport</li>
+                                    <li>Driver License</li>
+                                    <li>National ID card</li>
+                                </ul>
+                            </li>
+                            <li>Within its expiry date</li>
+                        </ul>
+
+                        <a class="font-small blue" href="javascript.void(0)">See an example image</a>
+                    </div>
+
+                </div>
+
+                <div class="file-details ">
+                    <div id="demo">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="buttons display-f">
+
+                <button id="p-btn2" type="submit" class="primary-button prev-btn font-small"
+                    href="javascript.void(0)">BACK</button>
+                <button id="n-btn2" type="submit" class="primary-button next-btn font-small"
+                    href="javascript.void(0)">NEXT</button>
+            </div>
+
+        </section>
+
+
+        <section class="price ta-center display-n container">
+            <h2 class="font-large fw-bold">Your fairest results</h2>
+            <p class="font-medium">16 Results for 30 years xied in 64117</p>
+
+            <div class="filter display-f ">
+                <div class="first-partition ta-left">
+                    <span class="display-ib font-small btn-width dropdown-btn">
+                        15 years
+                    </span>
+
+                    <span class="display-ib font-small btn-width dropdown-btn">
+                        Fixed price
+                    </span>
+
+                    <span class="display-ib font-small filter-btn">
+                        Filter results
+                    </span>
+                </div>
+
+                <span class="display-ib dropdown-btn sort-btn ta-left">
+                    <span class="button-prompt font-small">Sort By :</span>
+                    <span class="button-label font-small">Featured</span>
+
+                </span>
+            </div>
+
+            <table>
+                <tr class="font-small fw-normal ">
+                    <td class=" ta-left">Lender</td>
+                    <td class="ta-left">APR <img src="images/question-icon.png"></td>
+                    <td class="ta-left">Rate</td>
+                    <td class="ta-left">Est. Payment/Fees <img src="images/question-icon.png"></td>
+                    <td class="ta-left">Questions?</td>
+                    <td class="ta-right">Apply Now</td>
+                </tr>
+
+
+                <tr class="font-small  ta-left">
+                    <td class="ta-center">
+                        <img src="images/row1-icon.png">
+                        <p>NMLS ID: 7707</p>
+                    </td>
+
+                    <td>
+                        <h3>3.6% APR</h3>
+                        <p>Mar 10</p>
+                    </td>
+
+                    <td>
+                        <h4>3.500% Rate</h4>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h3>$898.09</h3>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h4>(887) 407 - 37123</h4>
+                        <p>Toll-free, no obligations</p>
+                    </td>
+
+                    <td class="ta-right">
+                        <button class="rownext-btn">NEXT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr class="font-small  ta-left">
+                    <td class="ta-center">
+                        <img src="images/row2-icon.png">
+                        <p>NMLS ID: 7707</p>
+                    </td>
+
+                    <td>
+                        <h3>3.6% APR</h3>
+                        <p>Mar 10</p>
+                    </td>
+
+                    <td>
+                        <h4>3.500% Rate</h4>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h3>$898.09</h3>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h4>(887) 407 - 37123</h4>
+                        <p>Toll-free, no obligations</p>
+                    </td>
+
+                    <td class="ta-right">
+                        <button class="rownext-btn">NEXT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <hr>
+                    </td>
+                </tr>
+
+
+                <tr class="font-small  ta-left">
+                    <td class="ta-center">
+                        <img src="images/row3-icon.png">
+                        <p>NMLS ID: 7707</p>
+                    </td>
+
+                    <td>
+                        <h3>3.6% APR</h3>
+                        <p>Mar 10</p>
+                    </td>
+
+                    <td>
+                        <h4>3.500% Rate</h4>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h3>$898.09</h3>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h4>(887) 407 - 37123</h4>
+                        <p>Toll-free, no obligations</p>
+                    </td>
+
+                    <td class="ta-right">
+                        <button class="rownext-btn">NEXT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr class="font-small  ta-left">
+                    <td class="ta-center">
+                        <img src="images/row4-icon.png">
+                        <p>NMLS ID: 7707</p>
+                    </td>
+
+                    <td>
+                        <h3>3.6% APR</h3>
+                        <p>Mar 10</p>
+                    </td>
+
+                    <td>
+                        <h4>3.500% Rate</h4>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h3>$898.09</h3>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h4>(887) 407 - 37123</h4>
+                        <p>Toll-free, no obligations</p>
+                    </td>
+
+                    <td class="ta-right">
+                        <button class="rownext-btn">NEXT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <hr>
+                    </td>
+                </tr>
+
+
+                <tr class="font-small  ta-left">
+                    <td class="ta-center">
+                        <img src="images/row5-icon.png">
+                        <p>NMLS ID: 7707</p>
+                    </td>
+
+                    <td>
+                        <h3>3.6% APR</h3>
+                        <p>Mar 10</p>
+                    </td>
+
+                    <td>
+                        <h4>3.500% Rate</h4>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h3>$898.09</h3>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h4>(887) 407 - 37123</h4>
+                        <p>Toll-free, no obligations</p>
+                    </td>
+
+                    <td class="ta-right">
+                        <button class="rownext-btn">NEXT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <hr>
+                    </td>
+                </tr>
+
+
+                <tr class="font-small  ta-left">
+                    <td class="ta-center">
+                        <img src="images/row6-icon.png">
+                        <p>NMLS ID: 7707</p>
+                    </td>
+
+                    <td>
+                        <h3>3.6% APR</h3>
+                        <p>Mar 10</p>
+                    </td>
+
+                    <td>
+                        <h4>3.500% Rate</h4>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h3>$898.09</h3>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h4>(887) 407 - 37123</h4>
+                        <p>Toll-free, no obligations</p>
+                    </td>
+
+                    <td class="ta-right">
+                        <button class="rownext-btn">NEXT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <hr>
+                    </td>
+                </tr>
+
+
+                <tr class="font-small  ta-left">
+                    <td class="ta-center">
+                        <img src="images/row7-icon.png">
+                        <p>NMLS ID: 7707</p>
+                    </td>
+
+                    <td>
+                        <h3>3.6% APR</h3>
+                        <p>Mar 10</p>
+                    </td>
+
+                    <td>
+                        <h4>3.500% Rate</h4>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h3>$898.09</h3>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h4>(887) 407 - 37123</h4>
+                        <p>Toll-free, no obligations</p>
+                    </td>
+
+                    <td class="ta-right">
+                        <button class="rownext-btn">NEXT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <hr>
+                    </td>
+                </tr>
+
+
+                <tr class="font-small  ta-left">
+                    <td class="ta-center">
+                        <img src="images/row8-icon.png">
+                        <p>NMLS ID: 7707</p>
+                    </td>
+
+                    <td>
+                        <h3>3.6% APR</h3>
+                        <p>Mar 10</p>
+                    </td>
+
+                    <td>
+                        <h4>3.500% Rate</h4>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h3>$898.09</h3>
+                        <p>1 Point</p>
+                        <p>30 Rate Lock</p>
+                    </td>
+
+                    <td>
+                        <h4>(887) 407 - 37123</h4>
+                        <p>Toll-free, no obligations</p>
+                    </td>
+
+                    <td class="ta-right">
+                        <button class="rownext-btn">NEXT</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">
+                        <button class="pagebtn" id="p-btn3">
+                            <i class="fa fa-long-arrow-left font-large"></i>
+                        </button><button class="pagebtn" id="n-btn3">
+                            <i class="fa fa-long-arrow-right font-large"></i>
+                        </button>
+
+                    </td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section class="rates container display-n ">
+            <h2 class="font-large ta-center fw-bold">Your fairest results</h2>
+
+            <div class="rate-range display-f ">
+
+                <div class="range-col1">
+                    <table>
+                        <tr class="font-small ta-left">
+                            <th>RATE TYPE</th>
+                            <th>FAIR RATE / APR</th>
+                            <th>POINTS/CREDITS</th>
+                            <th class="ta-right">PER MONTH</th>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr class="font-small ta-left">
+                            <td>
+                                <span class="small-btn green"> 15 years </span>
+                                <span class="xsmall-btn white"> Fixed </span>
+                            </td>
+
+                            <td class="font-medium">
+                                <span class="grey">4.250%</span> <span class="blue-grey">/ 5.125%</span>
+                            </td>
+
+                            <td class="font-medium display-f">
+                                <span>-$1,532</span><span class="box display-ib "></span>
+                            </td>
+
+                            <td class="font-medium ta-center">
+                                <span>$3,120</span><span class="box display-ib "></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr class="font-small ta-left">
+                            <td>
+                                <span class="small-btn bright-blue"> 20 years </span>
+                                <span class="xsmall-btn white"> Fixed </span>
+                            </td>
+
+                            <td class="font-medium">
+                                <span class="grey">4.650% </span> <span class="blue-grey">/ 5.215%</span>
+                            </td>
+
+                            <td class="font-medium display-f">
+                                <span>-$625</span><span class="box display-ib "></span>
+                            </td>
+
+                            <td class="font-medium ta-center">
+                                <span>$2,585</span><span class="box display-ib "></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr class="font-small ta-left">
+                            <td>
+                                <span class="small-btn aqua-blue"> 30 years </span>
+                                <span class="xsmall-btn white"> Fixed </span>
+                            </td>
+
+                            <td class="font-medium">
+                                <span class="grey">4.875% </span> <span class="blue-grey">/ 4.875%</span>
+                            </td>
+
+                            <td class="font-medium display-f">
+                                <span>-$1,625</span><span class="box display-ib"></span>
+                            </td>
+
+                            <td class="font-medium ta-center">
+                                <span>$2,585</span><span class="box display-ib "></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr class="font-small ta-left">
+                            <td>
+                                <span class="small-btn violet"> 10/1 </span>
+                                <span class="xsmall-btn white"> Adjustable </span>
+                            </td>
+
+                            <td class="font-medium">
+                                <span class="grey">4.750%</span> <span class="blue-grey">/ 4.875%</span>
+                            </td>
+
+                            <td class="font-medium display-f">
+                                <span>-$154</span><span class="box display-ib"></span>
+                            </td>
+
+                            <td class="font-medium ta-center">
+                                <span>$2,072</span><span class="box display-ib "></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr class="font-small ta-left">
+                            <td>
+                                <span class="small-btn purple"> 7/1 </span>
+                                <span class="xsmall-btn white"> Adjustable </span>
+                            </td>
+
+                            <td class="font-medium">
+                                <span class="grey">4.750%</span> <span class="blue-grey">/ 4.875%</span>
+                            </td>
+
+                            <td class="font-medium display-f">
+                                <span>-$154</span><span class="box display-ib"></span>
+                            </td>
+
+                            <td class="font-medium ta-center">
+                                <span>$2,072</span><span class="box display-ib "></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr class="font-small ta-left">
+                            <td>
+                                <span class="small-btn pink"> 5/1 </span>
+                                <span class="xsmall-btn white"> Adjustable </span>
+                            </td>
+
+                            <td class="font-medium">
+                                <span class="grey">4.750%</span> <span class="blue-grey">/ 4.875%</span>
+                            </td>
+
+                            <td class="font-medium display-f">
+                                <span>-$154</span><span class="box display-ib"></span>
+                            </td>
+
+                            <td class="font-medium ta-center">
+                                <span>$2,072</span><span class="box display-ib "></span>
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                <hr>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="foot display-f ">
+
+                        <p>Rates and fees as of 12:06 PM</p>
+                        <button id="n-btn4" type="submit" class="primary-button next-btn font-small"
+                            href="javascript.void(0)">NEXT</button>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="range-col2">
+
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Fixed</p>
+                                <p>15 Years</p>
+                                <p>20 Years</p>
+                                <p>30 Years</p>
+                            </td>
+
+                            <td>
+                                <p>Adjustable</p>
+                                <p>10/1</p>
+                                <p>7/1</p>
+                                <p>5/1</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <p>Max per month</p>
+                                <input type="range">
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <p>Max points/credit</p>
+                                <input type="range">
+
+                            </td>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="progressbar container display-n ">
+            <div class="head-progress display-f">
+                <div class="progress display-f">
+                    <div class="set-size charts-container ">
+                        <div class="pie-wrapper">
+                            <span class="label">60%</span>
+                            <div class="pie">
+                                <div class="other-side  other circle"></div>
+                                <div class="left-side  half circle"></div>
+                                <div class="right-side  half circle"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-confirmation">
+                        <h2 class="font-large fw-bold">Your Mortgage is 60% Complete</h2>
+                        <p>Great Start Adrian! Please complete remaining steps!</p>
+
+                    </div>
+
+                </div>
+
+                <div class="talk-to-us display-f">
+                    <span class="font-small span">Talk to us</span>
+                    <hr>
+                    <img src="images/arrow.png">
+                </div>
+            </div>
+
+            <div class="steps">
+
+                <div class="step-box display-f">
+                    <div class="step-label">
+                        <span class="list display-ib">1</span>
+                        <span>Personal details</span>
+                    </div>
+                    <div class="check">
+
+                    </div>
+
+                </div>
+
+                <div class="step-box display-f">
+                    <div class="step-label">
+                        <span class="list display-ib">2</span>
+                        <span>Employment & Income</span>
+                    </div>
+                    <div class="check">
+
+                    </div>
+
+                </div>
+
+                <div class="step-box display-f">
+                    <div class="step-label">
+                        <span class="list display-ib">3</span>
+                        <span>Adverse events</span>
+                    </div>
+
+                    <div class="talk-to-us display-f " id="n-btn5">
+                        <span class="font-small">Get started</span>
+                        <hr>
+                        <img src="images/arrowwhite.png">
+                    </div>
+
+                </div>
+
+                <div class="step-box display-f">
+                    <div class="step-label">
+                        <span class="list display-ib">4</span>
+                        <span>Upload Documents</span>
+                    </div>
+                    <div class="check">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="final display-n container">
+            
+                <h2 class="font-large fw-bold">Good morning Adrian</h2>
+
+                <div class="final-step display-f">
+                <div class="completion-box ">
+
+                    <div class="progress display-f">
+                        <div class="set-size charts-container ">
+                            <div class="pie-wrapper">
+                                <span class="label">60%</span>
+                                <div class="pie">
+                                    <div class="other-side  other circle"></div>
+                                    <div class="left-side  half circle"></div>
+                                    <div class="right-side  half circle"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="successful-notification">
+                            <h4>My first home</h4>
+                            <p>Great start! You are so close to buying your dream house</p>
+                            <div class="complete-btn display-f"> <span class="font-small">Complete Application</span>
+                                <hr> <img src="images/arrowwhite.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-application ">
+                    <h4>New application?</h4>
+                    <p>Looking for buy or rent? Get started with an idae how much you can afford</p>
+                    <div class="talk-to-us display-f">
+                        <span class="font-small">Get started</span>
+                        <hr>
+                        <img src="images/arrow.png">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
+    <footer class="footer display-b">
         <nav class="display-f">
             <div class="contacts">
-                <dl >
+                <dl>
                     <dt class="font-xsmall lh-normal">Schedule a conversation<br> <span>hello@fairrate.com</span></dt>
                     <dd class="font-medium"><i class="fa">&#xf095;</i><a class="display-ib"
                             href="tel:+62 202 555 0117">+62 202 555 0117</a></dd>
@@ -91,18 +1016,18 @@
             <div class="company">
                 <dl class="lh-medium font-xsmall">
                     <dt class=" lh-normal">COMPANY</dt>
-                    <dd ><a href="javascript.void(0)">Resources</a></dd>
-                    <dd ><a href="javascript.void(0)">Career</a></dd>
+                    <dd><a href="javascript.void(0)">Resources</a></dd>
+                    <dd><a href="javascript.void(0)">Career</a></dd>
                 </dl>
             </div>
 
             <div class="legal">
                 <dl class="lh-medium font-xsmall">
                     <dt class=" lh-normal">LEGAL</dt>
-                    <dd ><a href="javascript.void(0)">NMLS Consumer Access</a></dd>
-                    <dd ><a href="javascript.void(0)">Privacy Policy</a></dd>
-                    <dd ><a href="javascript.void(0)">Terms of Use</a></dd>
-                    <dd ><a href="javascript.void(0)">Disclosures & Licensing</a></dd>
+                    <dd><a href="javascript.void(0)">NMLS Consumer Access</a></dd>
+                    <dd><a href="javascript.void(0)">Privacy Policy</a></dd>
+                    <dd><a href="javascript.void(0)">Terms of Use</a></dd>
+                    <dd><a href="javascript.void(0)">Disclosures & Licensing</a></dd>
                 </dl>
             </div>
 
@@ -123,7 +1048,7 @@
 
                     <dd class="font-xsmall lh-medium">
                         Fusce dapibus, tellus ac cursus commodo, tortor<br>
-                         mauris condimentum nibh, ut fermentum massa justo <br>
+                        mauris condimentum nibh, ut fermentum massa justo <br>
                         sit amet risus. Praesent commodo cursus magna.
                     </dd>
                 </dl>
@@ -131,9 +1056,11 @@
             </div>
         </nav>
 
-        <p class="font-xsmall">© 2021 Deivas.io, Inc. All rights reserved.</p>
+        <p class="font-xsmall copyright">© 2021 Deivas.io, Inc. All rights reserved.</p>
 
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

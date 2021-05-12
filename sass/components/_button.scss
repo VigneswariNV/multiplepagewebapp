@@ -1,14 +1,77 @@
 button{
+    border:none;
     outline:none;
     cursor:pointer;
 }
-
 .primary-button{
     width: 180px;
-    padding: 14px 0 15px 0;
+    padding: 15px 0 ;
     color:$white;
     border-radius: 2px;
-    background-color: $lightblue;
     border:none;
     font-family: inherit;
+}
+.next-btn{
+    background-color: $lightblue;
+}
+.back-btn{
+    background-color: $lightgrey;
+}
+.secondary-button{
+    width:315px;
+    padding:15px 0;
+    @include border(1px,solid,$lightgrey);
+    
+}
+.bg-grey{
+    background-color: $greydark;
+    color:$white;
+}
+.bg-white{
+    background-color: $white;
+    color: $greydark;
+    border-left:none;
+}
+.dropdown-btn{
+    padding: 10px 10px 10px 15px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+    @include border(1px,solid,$lightgrey);
+    color:$dark;
+    background-color: $white;
+}
+.btn-width{
+    width:220px;
+}
+.filter-btn{
+    //width:100px;
+    padding: 10px 15px ;
+    border-radius: 2px;
+    background-color: $aqua-marine;
+    color:$white;
+}
+/* .sort-btn{
+    width:160px;
+} */
+.rownext-btn{
+    width:90px;
+    color:$white;
+    background-color: $greydark;
+    padding: 10px 28px;
+}
+.pagebtn{
+    padding: 10px 60px;
+    background-color: $palegrey;
+    @include border(1px,solid,$lightgrey);
+}
+.small-btn{
+    margin-right:5px;
+    padding:5px 15px;
+    border-radius: 20px;
+    color:white;
+}
+.xsmall-btn{
+    padding:5px 10px;
+    border-radius:12.5px;
+    color:$grey;
 }

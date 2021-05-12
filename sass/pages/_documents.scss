@@ -1,0 +1,88 @@
+.documents{
+    padding-bottom:80px;
+    .tabs{
+        margin-top:50px;
+    }
+    .upload-box{
+        width:630px;
+        margin:auto;
+        margin-top:30px;
+        @include border(1px,solid,$lightgrey);
+        box-shadow: 0 6px 8px 0 rgba(164, 164, 164, 0.21);
+        border-radius: 3px;
+        background-color: $white;
+        p{
+            margin:20px 0;
+            color:$dark;
+        }
+        .drag-drop{
+            
+            padding:20px 15px;
+            justify-content: space-between;
+            //flex-direction: row;
+            border-top:1px solid $lightgrey;
+            input{
+                display:none;
+            }
+            .blue{
+                color:$lightblue;
+                text-decoration: underline;
+                cursor:pointer;
+            }
+            .files{
+                width:330px;
+                padding-top:30px;
+                background-color:$palegrey ;
+                @include border(2px,dotted,$lightgrey);
+                .criteria{
+                    margin:70px 0 5px 0;
+                    color:$navcolor;
+                }
+            }
+           
+        }
+
+        .doc-rules{
+          
+            ul{
+                list-style-type: disc;
+            }
+            ul:nth-child(2){
+                margin-bottom:90px;
+            }
+            li{
+                text-align:unset;
+            }
+
+        }
+
+        .file-details{
+            background-color:$palegrey ;
+            justify-content: space-between;
+            #demo{
+                width:100%;
+                justify-content: space-between;
+                p{
+                    display:flex;
+                    justify-content: space-between;
+                }
+                
+
+                /* span{
+                    margin-right:60px;
+                }
+                img{
+                    margin-left:20px;
+                } */
+            }
+        }
+    }
+
+    .buttons{
+        width:630px;
+        margin:auto;
+        margin-top:50px;
+        justify-content:space-between;
+    }
+    
+}

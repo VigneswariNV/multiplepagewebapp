@@ -1,0 +1,56 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+.progress{
+    justify-content: space-between;
+    align-items: center;
+
+  .pie-wrapper {
+      font-size:150px;
+    height: 1em;
+    width: 1em;
+    margin: 15px;
+    position: relative;
+  }
+  
+  .circle {
+    height: 100%;
+    width: 100%; 
+    border-radius: 50%;
+    clip: rect(0, 0.5em, 1em, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .half{
+    border: 7px solid #23c0f5;
+  }
+  .other{
+    border: 7px solid #dbecf8;
+  }
+  .pie-wrapper .label {
+    color:black;
+    border-radius: 50%;
+    display: block;
+    font-size: 50px;
+    text-align:center;
+    left:4%;
+    line-height: 2.6em;
+    position: absolute;
+    right:4%;
+    top:5%;
+  } 
+.pie {
+    clip: rect(auto, auto, auto, auto);
+  }
+ .right-side {
+    transform: rotate(180deg);
+  }
+.left-side {
+   transform:rotate(216deg);
+  }
+}

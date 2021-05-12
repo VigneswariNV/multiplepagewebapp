@@ -7,6 +7,81 @@
 .display-f{
     display:flex;
 }
+.display-n{
+    display:none;
+}
 .ta-center{
     text-align:center;
+}
+.ta-left{
+    text-align:left;
+}
+.ta-right{
+    text-align:right;
+}
+.f-left{
+    float:left;
+}
+.f-right{
+    float:right;
+}
+.clear-fix::after{
+    content: "";
+  clear: both;
+  display: table;
+
+}
+
+.green{
+    @include bg($green);
+}
+.bright-blue{
+    @include bg($brightblue);
+}
+.aqua-blue{
+    @include bg($aqua-blue);
+}
+.violet{
+    @include bg($violet);
+}
+.purple{
+    @include bg($purple);
+}
+.pink{
+    @include bg($pink);
+}
+.white{
+    @include bg($footerbg);
+}
+.dark{
+    color:$dark;
+}
+.blue-grey{
+    color:$navcolor;
+}
+.check {
+    position:absolute;
+    top:25%;
+    left:5.5%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    transform: rotate(50deg);
+    height: 14px;
+    width: 7px;
+    border-bottom: 3px solid $lightblue;
+    border-right: 3px solid $lightblue;
+    //text-align: center;
+}
+.check1{
+    position:absolute;
+    top:32%;
+    left:10%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    transform: rotate(50deg);
+    height: 14px;
+    width: 7px;
+    border-bottom: 3px solid $lightblue;
+    border-right: 3px solid $lightblue;
+
 }

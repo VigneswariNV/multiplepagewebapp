@@ -1,5 +1,6 @@
 header{
 padding:10px 20px;
+box-shadow: 0 1px 0 0 var(--pale-blue);
 nav{
 justify-content: space-between;
 
@@ -9,6 +10,9 @@ justify-content: space-between;
         li{
             margin-right:40px;
             color:$navcolor; 
+         }
+        li:nth-child(2){
+            color:$dark;
          }
 }
 }

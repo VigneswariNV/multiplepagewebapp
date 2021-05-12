@@ -1,12 +1,21 @@
 @import 'abstracts/variables';
-@import 'abstracts/typography';
-@import 'abstracts/utilities';
-@import 'abstracts/reset';
 @import 'abstracts/mixins';
+@import 'abstracts/utilities';
+
+
+@import 'base/typography';
+@import 'base/reset';
 
 @import 'components/button';
+@import 'components/progressbar';
 
 @import 'layout/header';
 @import 'layout/footer';
 
 @import 'pages/register';
+@import 'pages/details';
+@import 'pages/documents';
+@import 'pages/price';
+@import 'pages/rates';
+@import 'pages/progress';
+@import 'pages/final';
