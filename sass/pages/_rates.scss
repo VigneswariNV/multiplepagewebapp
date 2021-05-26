@@ -1,23 +1,23 @@
+.rates{
+    padding-top:80px;
+}
 .rate-range{
-    width:1100px;
     margin:auto;
     margin-top:60px;
     padding-bottom:60px;
-    justify-content: space-between;
-
-    table{
+    .table{
+        padding:5px 0;
         @include border(1px,solid,$lightgrey);
-        background-color: white;
+        background-color: $white;
         border-radius: 3px;
         box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
-
     }
-    
     .range-col1{
-        width:720px;
+        width:760px;
     table{
+      
         td,th{
-            padding:10px 20px;
+            padding:7px 24px;
             justify-content: space-evenly;
             align-items: center;
         }
@@ -31,25 +31,105 @@
         .box{
             width:62px;
             height: 4px;
-           margin-bottom:5px;
-           margin-left:5px;
+            margin-bottom:5px;
+            margin-left:5px;
             border-radius: 2.5px;
             background-color: $paleblue;
         }
     }
 }
-
 .range-col2{
-    table{
         width:300px;
+        height:397px;
+        padding:20px 20px;
+        background-color: $white;
+
+        .first-child{
+            margin-bottom:20px;
+        }
+        .last-child{
+            margin-top:10px;
+            color:$greydark;
+            div{
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+        }
+            .rate-box{
+                width:75px;
+                padding:5px 0;
+                margin-top:0;
+                border-radius: 3px;
+                box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21), inset 0 0 0 1px rgba(102, 113, 123, 0.25);
+                border: solid 1px $lightgrey;
+                background-color: $white;
+               input{
+                   width:80%;
+                   background-color: inherit;
+                   color:$greydark;
+               }
+            }
+        .options{
+            margin-bottom:20px;
+            .checkmark{
+                position:relative;
+                margin-right:5px;
+                text-align: center;
+            }
+            .check{
+                top:10%;
+                left:30%;
+            }
+            .title{
+                margin-left:10px;
+                margin-top:5px;
+            }
+        }
+        .main-list{
+            margin-bottom:5px;
+            color:$greydark;
+        .small-checkbox{
+            position: relative;
+            @include size(16px);
+            margin-right:5px;
+            border-radius: 3px;
+        }
+    }
+    }
+.foot{
+    margin-top:15px;
+    div{
+        padding-left:25px;
+        border-bottom:1px solid  $hr;
+        img{
+            margin-right:10px;
+        }
+        span{
+            line-height:1.71;
+            color:$greydark;
+        }
     }
 }
-
-.foot{
+input[type=range]{
+    overflow: hidden;
+    width: 170px;
+    height:10px;
+    -webkit-appearance: none;
+    background-color: $lightgrey;
+    border-radius: 5px;
     margin-top:20px;
-    justify-content: space-between;
-    align-items: center;
 }
-
-
+input[type=range]::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      margin-top: -1px;
+} 
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background:$white;
+    border: solid 1px $black;
+    box-shadow: -80px 0 0 80px $brightblue;
+}
 }

@@ -19,6 +19,21 @@
 .ta-right{
     text-align:right;
 }
+.ai-center{
+    align-items: center;
+}
+.spacebetween{
+    justify-content: space-between;
+}
+.spaceevenly{
+    justify-content: space-evenly;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
 .f-left{
     float:left;
 }
@@ -26,32 +41,34 @@
     float:right;
 }
 .clear-fix::after{
-    content: "";
+  content: "";
   clear: both;
   display: table;
-
 }
-
+.underline{
+    text-decoration: underline;
+    color:$dark;
+}
 .green{
-    @include bg($green);
-}
+   background-color: $green;
+} 
 .bright-blue{
-    @include bg($brightblue);
+    background-color: $brightblue;
 }
 .aqua-blue{
-    @include bg($aqua-blue);
+    background-color: $aqua-blue;
 }
 .violet{
-    @include bg($violet);
+    background-color: $violet;
 }
 .purple{
-    @include bg($purple);
+    background-color: $purple;
 }
 .pink{
-    @include bg($pink);
+    background-color:$pink;
 }
 .white{
-    @include bg($footerbg);
+    background-color:$footerbg;
 }
 .dark{
     color:$dark;
@@ -59,29 +76,91 @@
 .blue-grey{
     color:$navcolor;
 }
+.box-prop{
+    height:4px;
+    border-radius:2.5px;
+}
+.pos-rel{
+    position:relative;
+}
+.greyborder{
+    @include border(1px,solid,$lightgrey);
+}
+.check-box{
+    cursor:pointer;
+    @include size(28px);
+    .checkmark{
+        position:relative;
+        @include size(28px);
+        border-radius:3px;
+    } 
+}
+.focus{
+    @include border(1px,solid,$brightblue) ;
+} 
 .check {
     position:absolute;
-    top:25%;
-    left:5.5%;
-    transform: translate(-50%,-50%);
+    top:20%;
+    left:35%;
     display: inline-block;
     transform: rotate(50deg);
     height: 14px;
     width: 7px;
-    border-bottom: 3px solid $lightblue;
-    border-right: 3px solid $lightblue;
-    //text-align: center;
 }
-.check1{
-    position:absolute;
-    top:32%;
-    left:10%;
-    transform: translate(-50%,-50%);
-    display: inline-block;
-    transform: rotate(50deg);
-    height: 14px;
-    width: 7px;
+.blue-check{
     border-bottom: 3px solid $lightblue;
     border-right: 3px solid $lightblue;
-
+}
+.white-check{
+    width:5px;
+    height:10px;
+    top:15%;
+    left:35%;
+    border-bottom: 2px solid $white;
+    border-right: 2px solid $white;
+}
+.green-check{
+    position: relative;
+    top:0;
+    left:0;
+    height:20px;
+    width:12px;
+    margin-bottom:-8px;
+    border-bottom: 3px solid $white;
+    border-right: 3px solid $white;
+}
+@each $space in $spaceamounts{
+    .width-#{$space}{
+        width:#{$space}px;
+    }
+}
+%arrow-base{
+    display:inline-block;
+    position:absolute;
+    width:10px;
+    height:10px;
+}
+.arrow-left{
+    @extend %arrow-base;
+    top:40%;
+    left:40%;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    transform:rotate(-45deg);
+  }
+  .arrow-right{
+    @extend %arrow-base;
+    top:40%;
+    left:0%;
+    border-left:2px solid black;
+    border-bottom:2px solid black;
+    transform:rotate(45deg); 
+  }
+  .line{
+    display:inline-block;
+    width:16px;
+    border-bottom:2px solid black;
+  }
+%pointer{
+    cursor:pointer;
 }

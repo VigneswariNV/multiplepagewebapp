@@ -1,33 +1,24 @@
 header{
 padding:10px 20px;
-box-shadow: 0 1px 0 0 var(--pale-blue);
+box-shadow: 0 1px 0 0 $lightblue;
 nav{
-justify-content: space-between;
-
 .logopannel,.details{
     ul{
-        align-items: center;
         li{
             margin-right:40px;
             color:$navcolor; 
          }
-        li:nth-child(2){
-            color:$dark;
-         }
 }
 }
 .profile-options{
-    align-items: center;
     .profile{
         ul{
-            align-items: center;
             li{
                 margin-right:24px;
             }
             .name{
                 li{
                     margin-right:12px;
-                    color:$dark;
                 }
             }
         }

@@ -1,9 +1,7 @@
 footer{
     padding: 48px 150px 85px 150px;
     background-color: $footerbg;
-
     nav{
-        justify-content: space-between;
         dt{
             color:$navcolor;
             margin-bottom:15px;
@@ -15,16 +13,14 @@ footer{
             color:$grey;
         }
     }
-
     .contacts{
                 a{
-                    color:$grey;
+                   color:$grey;
                    margin-top:12px;
                 }
         }
         .contact-logo{
             width:140px;
-            justify-content: space-between;
             margin-top:15px;
         }
     }

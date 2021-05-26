@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Web app using HTML,CSS and Javascript">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="dist/main.css" rel="stylesheet">
+  
+
+    <title>Webapp</title>
 </head>
 
 <body>
     <header>
-        <nav class="display-f">
+        <nav class="display-f spacebetween">
             <div class="logopannel">
-                <ul class="display-f ">
+                <ul class="display-f ai-center ">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
                             <path fill="#919EAB" fill-rule="evenodd"
@@ -36,20 +39,21 @@
                 </ul>
             </div>
 
-            <div class="profile-options display-f">
+            <div class="profile-options display-f ai-center">
                 <div class="details">
-                    <ul class="display-f font-normal">
+                    <ul class="display-f font-normal ai-center">
                         <li><a href="javascript.void(0)">Home</a></li>
-                        <li><a href="javascript.void(0)">Application</a></li>
+                        <li ><a class="dark" href="javascript.void(0)">Application</a></li>
                         <li><a href="javascript.void(0)">Documents</a></li>
                     </ul>
                 </div>
                 <div class="profile display-f">
-                    <ul class="display-f">
+                    <ul class="display-f ai-center">
                         <li><img src="images/bellicon.png" alt="bell-icon"> </li>
-                        <ul class="name display-f ">
+                        <ul class="name display-f ai-center ">
                             <li><img src="images/personimage.jpg" alt="profileimage"></li>
-                            <li class="font-normal">Adrian Manea</li>
+                            <li class="font-normal dark">Adrian Manea</li>
+                            <li class="arrow-btn down"></li>
                         </ul>
                     </ul>
                 </div>
@@ -57,14 +61,14 @@
         </nav>
     </header>
 
-    <main class="display-f">
+    <main class="pos-rel">
 
-        <section class="register tab ta-center container">
+        <section class="register tab display-b ta-center container">
             <h1 class="font-large">
                 I'll get you an awesome price in seconds. Ready to go?
             </h1>
 
-            <form class="font-small display-f">
+            <form class="font-small display-f spacebetween">
                 <input id="fname" type="text" placeholder="First name">
                 <input id="lname" type="text" placeholder="Last name">
             </form>
@@ -74,8 +78,8 @@
         </section>
 
 
-        <section class="details-form tab display-n container">
-            <div class="basic-intro">
+        <section class="details-form tab display-n container spacebetween">
+            <div class="basic-intro flex-start">
                 <h2 class="font-large fw-bold">Fill the form on<br> the right</h2>
 
                 <p class="font-small lh-normal">Fusce dapibus, tellus ac cursus commodo,<br> tortor mauris condimentum
@@ -84,7 +88,7 @@
                 <form>
                     <label class="font-xsmall">DATE OF BIRTH</label><br>
 
-                    <div class="input-container form-input">
+                    <div class="input-container form-input pos-rel">
                         <img class="f-left" src="images/mail-outline.png">
                         <input class="input-text" type="date">
                     </div>
@@ -92,52 +96,56 @@
 
             </div>
 
-            <div class="main-form">
+            <div class="main-form flex-end">
 
                 <div class="basic">
-                    <div class="input-container form-input">
+                    <div class="input-container form-input pos-rel">
                         <img class="f-left" src="images/location.png">
                         <input id="address" class="input-text font-small" placeholder="Enter the exact address">
                     </div>
 
-                    <div class="input-container form-input">
+                    <div class="input-container form-input pos-rel">
                         <img class="f-left" src="images/mail-outline.png">
                         <input id="email" class="input-text font-small" placeholder="Email address">
                     </div>
 
-                    <div class="options form-input ">
+                    <div id="option1" class="options pos-rel display-f ai-center form-input pos-rel ">
 
                         <label class="check-box " for="check-box1">
-                            <input  type="checkbox" name="box" id="check-box1">
-                            <span class="checkmark greyborder"></span>
-                            <span class="checksign"></span>
+                            <input class="toggle display-n" type="checkbox" name="box" id="check-box1">
+                            <div class="checkmark display-ib greyborder">
+                                <span id="checksign1 " class="checksign check"></span>
+                            </div>
+
                         </label>
-                        <span class="font-small input-value">Condo</span>
+                        <span class="font-small input-value dark">Condo</span>
 
                     </div>
 
-                    <div class="options form-input ">
+                    <div class="options pos-rel display-f ai-center form-input  ">
                         <label class="check-box " for="check-box2">
-                            <input  name="box" type="checkbox" id="check-box2">
-                            <span class="checkmark greyborder"></span>
-                            <span class="checksign"></span>
+                            <input class="toggle display-n" name="box" type="checkbox" id="check-box2">
+                            <div class="checkmark display-ib greyborder">
+                                <span id="checksign1" class="checksign check"></span>
+                            </div>
                         </label>
-                        <span class="font-small input-value">Co-op</span>
+                        <span class="font-small input-value dark">Co-op</span>
 
                     </div>
 
-                    <div class="options form-input ">
+                    <div class="options pos-rel display-f ai-center form-input  ">
 
                         <label class="check-box " for="check-box3">
-                            <input  class="display-n" name="box" type="checkbox" id="check-box3">
-                            <span class="checkmark greyborder"></span>
-                            <span class="checksign"></span>
+                            <input class="display-n toggle" name="box" type="checkbox" id="check-box3">
+                            <div class="checkmark display-ib greyborder">
+                                <span id="checksign1" class="checksign check"></span>
+                            </div>
                         </label>
-                        <span class="font-small input-value">House</span>
+                        <span class="font-small input-value dark">House</span>
 
                     </div>
 
-                    <div class="form-input timelimit font-small">
+                    <!-- <div class="form-input timelimit font-small">
                         <label for="time-limit"> </label>
                         <input list="time-limits" id="time-limit">
                         <datalist id="time-limits">
@@ -148,16 +156,26 @@
                             <option value="I don't know">
                         </datalist>
 
+                    </div> -->
+
+                    <div class=" form-input pos-rel timelimit font-small" id="datalist">
+                        <input class="font-normal" id="datalist-input" type="text" placeholder="I don't know">
+
+                        <div class="display-ib">
+                            <div class="arrow-btn up"></div>
+                            <div class="arrow-btn down"></div>
+                        </div>
+                        <ul id="datalist-ul"></ul>
                     </div>
                 </div>
 
 
-                <div class="alarm ">
-
-                    <div class="alarm-boxes  display-f">
-                        <div class="box1 greyborder">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="48" viewBox="0 0 46 48">
-                                <g id="img1" fill="#212B36" fill-rule="nonzero">
+                <div class="alarm flex-end">
+                    <div class="alarm-boxes  display-f spacebetween">
+                        <div class="box1 options pos-rel greyborder">
+                            <svg class="fill-svg" xmlns="http://www.w3.org/2000/svg" width="46" height="48"
+                                viewBox="0 0 46 48">
+                                <g id="img1" fill-rule="nonzero">
                                     <path
                                         d="M21.353 27.266h3.294a.775.775 0 0 0 .771-.778.775.775 0 0 0-.771-.777h-3.294a.775.775 0 0 0-.771.777c0 .43.345.778.771.778z" />
                                     <path
@@ -165,39 +183,43 @@
                                 </g>
                             </svg>
 
-                            <div class="alarm-check">
+                            <div class="alarm-check display-f ai-center">
 
                                 <label class="check-box " for="check-box4">
-                                    <input class="display-n" type="checkbox" id="check-box4">
-                                    <span onclick="img1.style.fill='#4ad5f6';" class="checkmark box-alarm greyborder"></span>
-                                    <span class="checksign1"></span>
+                                    <input class="display-n alarmbox" type="checkbox" id="check-box4">
+                                    <div class="checkmark display-ib sign-box greyborder">
+                                        <span class="checksign1 check"></span>
+                                    </div>
+
                                 </label>
                                 <span class="font-small input-value">Burglar alarm</span>
                             </div>
                         </div>
 
-                        <div class="box1 greyborder ">
-                            <svg id="img2" xmlns="http://www.w3.org/2000/svg" width="36" height="48" viewBox="0 0 36 48">
-                                <text fill="#212B36" fill-rule="evenodd"
-                                    font-family="FontAwesome5ProLight, Font Awesome 5 Pro" font-size="48"
-                                    font-weight="300" transform="translate(-82 -35)">
-                                    <tspan x="82" y="77"></tspan>
-                                </text>
+                        <div class="box1 options pos-rel greyborder ">
+                            <svg class="fill-svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="fire" class="svg-inline--fa fa-fire fa-w-12" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z">
+
+                                </path>
                             </svg>
 
 
-                            <div class="alarm-check">
+                            <div class="alarm-check display-f ai-center">
                                 <label class="check-box " for="check-box5">
-                                    <input class="display-n" type="checkbox" id="check-box5">
-                                    <span onclick="img2.style.fill='#4ad5f6';" class="checkmark box-alarm greyborder"></span>
-                                    <span class="checksign1"></span>
+                                    <input class="display-n alarmbox" type="checkbox" id="check-box5">
+                                    <div class="checkmark display-ib sign-box greyborder">
+                                        <span class="checksign1 check"></span>
+                                    </div>
                                 </label>
                                 <span class="font-small input-value">Burglar alarm</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="submit-buttons display-f">
+                    <div class="submit-buttons display-f spacebetween">
 
                         <button id="p-btn1" type="submit" class="primary-button prev-btn font-small"
                             href="javascript.void(0)">BACK</button>
@@ -220,49 +242,54 @@
             </div>
 
             <div class="upload-box">
-                <p class="font-medium ta-center">Upload photo Indentification</p>
+                <p class="heading font-medium ta-center">Upload photo Indentification</p>
 
-                <div class="drag-drop display-f ">
+                <form method="POST" action="" id="a1">
+                    <div class="drag-drop display-f spacebetween ">
 
-                    <div class="files ta-center  ">
-                        <img src="images/upload-icon.png">
-                        <p class="font-medium">Drag files here to upload or<br>
-                            <label class="blue" for="upload-file">select a file
-                                <input onchange="myFunction()" id="upload-file" type="file" multiple size="50">
-                            </label>
-                            from your device
-                        </p>
+                        <div data-form-field="attachments[]" data-form-id="a1" class="files ta-center  ">
+                            <img src="images/upload-icon.png">
+                            <p class="font-medium">Drag files here to upload or<br>
+                                <label data-form-field="attachments[]" data-form-id="a1" class="blue"
+                                    for="upload-file">select a file
+                                    <input class="file-input" data-form-field="attachments[]" data-form-id="a1"
+                                        name="attachments[]" onchange="myFunction()" id="upload-file" type="file"
+                                        multiple size="50">
+                                </label>
+                                from your device
+                            </p>
 
-                        <p class="font-small criteria">JPG, PNG or PDF only, maximum file size - 5MB</p>
-                    </div>
+                            <p class="font-small criteria">JPG, PNG or PDF only, maximum file size - 5MB</p>
+                        </div>
 
-                    <div class="doc-rules ">
-                        <p class="font-small ta-left">YOUR DOCUMENTS MUST BE:</p>
-                        <ul class="font-medium">
-                            <li>A Government issued
-                                <ul class="font-normal">
-                                    <li>Passport</li>
-                                    <li>Driver License</li>
-                                    <li>National ID card</li>
+
+                        <div class="doc-rules ">
+                            <p class="font-small ta-left">YOUR DOCUMENTS MUST BE:</p>
+                            <div class="lists">
+                                <ul class="font-medium">
+                                    <li>A Government issued
+                                        <ul class="font-normal">
+                                            <li>Passport</li>
+                                            <li>Driver License</li>
+                                            <li>National ID card</li>
+                                        </ul>
+                                    </li>
+                                    <li>Within its expiry date</li>
                                 </ul>
-                            </li>
-                            <li>Within its expiry date</li>
-                        </ul>
+                            </div>
 
-                        <a class="font-small blue" href="javascript.void(0)">See an example image</a>
-                    </div>
-
-                </div>
-
-                <div class="file-details ">
-                    <div id="demo">
+                            <a class="font-small blue" href="javascript.void(0)">See an example image</a>
+                        </div>
 
                     </div>
-                </div>
+
+                    <div data-form-field="attachments[]" class="file-list font-small">
+                    </div>
+                </form>
 
             </div>
 
-            <div class="buttons display-f">
+            <div class="buttons display-f spacebetween">
 
                 <button id="p-btn2" type="submit" class="primary-button prev-btn font-small"
                     href="javascript.void(0)">BACK</button>
@@ -277,36 +304,68 @@
             <h2 class="font-large fw-bold">Your fairest results</h2>
             <p class="font-medium">16 Results for 30 years xied in 64117</p>
 
-            <div class="filter display-f ">
-                <div class="first-partition ta-left">
-                    <span class="display-ib font-small btn-width dropdown-btn">
-                        15 years
-                    </span>
+            <div class="filter display-f spacebetween ">
+                <div class="first-partition ta-left display-f ai-center spacebetween">
+                    <div class="display-f spacebetween ai-center font-small btn-width dropdown-btn dark">
+                        <span>15 years</span>
+                        <div class="display-ib dropdown-sign ">
+                            <div class="arrow-btn up"></div>
+                            <div class="arrow-btn down"></div>
+                        </div>
+                    </div>
 
-                    <span class="display-ib font-small btn-width dropdown-btn">
-                        Fixed price
-                    </span>
+                    <div class="display-f spacebetween ai-center font-small btn-width dropdown-btn dark">
+                        <span>Fixed price</span>
+                        <div class="display-ib dropdown-sign">
+                            <div class="arrow-btn up"></div>
+                            <div class="arrow-btn down"></div>
+                        </div>
+                    </div>
 
-                    <span class="display-ib font-small filter-btn">
+                    <div class="display-f ai-center font-small filter-btn">
                         Filter results
-                    </span>
+                    </div>
                 </div>
 
-                <span class="display-ib dropdown-btn sort-btn ta-left">
+                <div class="display-f spacebetween ai-center dropdown-btn dark sort-btn ta-left">
                     <span class="button-prompt font-small">Sort By :</span>
-                    <span class="button-label font-small">Featured</span>
+                    <span class="button-label dark font-small">Featured</span>
+                    <div class="display-ib dropdown-sign">
+                        <div class="arrow-btn up"></div>
+                        <div class="arrow-btn down"></div>
+                    </div>
 
-                </span>
+                </div>
             </div>
 
             <table>
                 <tr class="font-small fw-normal ">
                     <td class=" ta-left">Lender</td>
-                    <td class="ta-left">APR <img src="images/question-icon.png"></td>
-                    <td class="ta-left">Rate</td>
-                    <td class="ta-left">Est. Payment/Fees <img src="images/question-icon.png"></td>
-                    <td class="ta-left">Questions?</td>
-                    <td class="ta-right">Apply Now</td>
+                    <td class="ta-left  ">
+                        <div class="display-ib dropdown-sign">
+                            <div class="arrow-btn up"></div>
+                            <div class="arrow-btn down"></div>
+                        </div>
+                        APR <img src="images/question-icon.png">
+                    </td>
+                    <td class="ta-left">
+                        <div class="display-ib dropdown-sign">
+                            <div class="arrow-btn up"></div>
+                            <div class="arrow-btn down"></div>
+                        </div>
+                        Rate
+                    </td>
+                    <td class="ta-left">
+                        <div class="display-ib dropdown-sign">
+                            <div class="arrow-btn up"></div>
+                            <div class="arrow-btn down"></div>
+                        </div>
+                        Est. Payment/Fees <img src="images/question-icon.png">
+                    </td>
+                    <td class="ta-left">
+                        Questions?</td>
+                    <td class="ta-right">
+                        Apply Now</td>
                 </tr>
 
 
@@ -622,9 +681,15 @@
                 <tr>
                     <td colspan="6">
                         <button class="pagebtn" id="p-btn3">
-                            <i class="fa fa-long-arrow-left font-large"></i>
+                            <div class="pos-rel">
+                                <span class="line"></span>
+                                <span class="arrow-right arrow-base"></span>
+                            </div>
                         </button><button class="pagebtn" id="n-btn3">
-                            <i class="fa fa-long-arrow-right font-large"></i>
+                            <div class="pos-rel">
+                                <span class="line"></span>
+                                <span class="arrow-left arrow-base"></span>
+                            </div>
                         </button>
 
                     </td>
@@ -634,18 +699,19 @@
 
         </section>
 
-        <section class="rates container display-n ">
+        <section class="rates container display-n">
             <h2 class="font-large ta-center fw-bold">Your fairest results</h2>
 
-            <div class="rate-range display-f ">
+            <div class="rate-range spaceevenly display-f ">
 
                 <div class="range-col1">
-                    <table>
+                    <table class="table">
                         <tr class="font-small ta-left">
                             <th>RATE TYPE</th>
                             <th>FAIR RATE / APR</th>
                             <th>POINTS/CREDITS</th>
-                            <th class="ta-right">PER MONTH</th>
+                            <th class="ta-right display-f"><span>PER MONTH</span> <span class="arrow-btn down"></span>
+                            </th>
                         </tr>
 
                         <tr>
@@ -665,11 +731,17 @@
                             </td>
 
                             <td class="font-medium display-f">
-                                <span>-$1,532</span><span class="box display-ib "></span>
+                                <span class="underline">-$1,532</span>
+                                <div class="box">
+                                    <div class="box-prop width-42 green "></div>
+                                </div>
                             </td>
 
-                            <td class="font-medium ta-center">
-                                <span>$3,120</span><span class="box display-ib "></span>
+                            <td class="font-medium ">
+                                <span>$3,120</span>
+                                <div class="box display-ib">
+                                    <div class="box-prop width-42 green "></div>
+                                </div>
                             </td>
                         </tr>
 
@@ -690,11 +762,17 @@
                             </td>
 
                             <td class="font-medium display-f">
-                                <span>-$625</span><span class="box display-ib "></span>
+                                <span class="underline">-$625</span>
+                                <div class="box">
+                                    <div class="box-prop width-52 bright-blue "></div>
+                                </div>
                             </td>
 
-                            <td class="font-medium ta-center">
-                                <span>$2,585</span><span class="box display-ib "></span>
+                            <td class="font-medium ">
+                                <span>$2,585</span>
+                                <div class="box display-ib">
+                                    <div class="box-prop  width-42 bright-blue "></div>
+                                </div>
                             </td>
                         </tr>
 
@@ -715,11 +793,17 @@
                             </td>
 
                             <td class="font-medium display-f">
-                                <span>-$1,625</span><span class="box display-ib"></span>
+                                <span class="underline">-$1,625</span>
+                                <div class="box">
+                                    <div class="box-prop width-22 aqua-blue "></div>
+                                </div>
                             </td>
 
                             <td class="font-medium ta-center">
-                                <span>$2,585</span><span class="box display-ib "></span>
+                                <span>$2,585</span>
+                                <div class="box display-ib">
+                                    <div class="box-prop width-52 aqua-blue "></div>
+                                </div>
                             </td>
                         </tr>
 
@@ -740,11 +824,17 @@
                             </td>
 
                             <td class="font-medium display-f">
-                                <span>-$154</span><span class="box display-ib"></span>
+                                <span class="underline">-$154</span>
+                                <div class="box">
+                                    <div class="box-prop width-42 violet "></div>
+                                </div>
                             </td>
 
                             <td class="font-medium ta-center">
-                                <span>$2,072</span><span class="box display-ib "></span>
+                                <span>$2,072</span>
+                                <div class="box display-ib">
+                                    <div class="box-prop width-42 violet "></div>
+                                </div>
                             </td>
                         </tr>
 
@@ -765,11 +855,17 @@
                             </td>
 
                             <td class="font-medium display-f">
-                                <span>-$154</span><span class="box display-ib"></span>
+                                <span class="underline">-$154</span>
+                                <div class="box">
+                                    <div class="box-prop width-42 purple "></div>
+                                </div>
                             </td>
 
                             <td class="font-medium ta-center">
-                                <span>$2,072</span><span class="box display-ib "></span>
+                                <span>$2,072</span>
+                                <div class="box display-ib ">
+                                    <div class="box-prop width-42 purple "></div>
+                                </div>
                             </td>
                         </tr>
 
@@ -790,98 +886,164 @@
                             </td>
 
                             <td class="font-medium display-f">
-                                <span>-$154</span><span class="box display-ib"></span>
+                                <span class="underline">-$154</span>
+                                <div class="box">
+                                    <div class="box-prop width-42 pink "></div>
+                                </div>
                             </td>
 
                             <td class="font-medium ta-center">
-                                <span>$2,072</span><span class="box display-ib "></span>
+                                <span>$2,072</span>
+                                <div class="box display-ib">
+                                    <div class="box-prop width-42 pink "></div>
+                                </div>
                             </td>
 
 
-                        </tr>
-
-                        <tr>
-                            <td colspan="4">
-                                <hr>
-                            </td>
                         </tr>
 
                     </table>
 
-                    <div class="foot display-f ">
+                    <div class="foot display-f spacebetween ">
 
-                        <p>Rates and fees as of 12:06 PM</p>
+                        <div class="display-f ai-center">
+                            <img src="images/icon.png">
+                            <span class="font-small">Rates and fees as of 12:06 PM</span>
+                        </div>
                         <button id="n-btn4" type="submit" class="primary-button next-btn font-small"
                             href="javascript.void(0)">NEXT</button>
                     </div>
-
-
-
                 </div>
 
 
-                <div class="range-col2">
+                <div class="range-col2 table">
 
-                    <table>
-                        <tr>
-                            <td>
-                                <p>Fixed</p>
-                                <p>15 Years</p>
-                                <p>20 Years</p>
-                                <p>30 Years</p>
-                            </td>
-
-                            <td>
-                                <p>Adjustable</p>
-                                <p>10/1</p>
-                                <p>7/1</p>
-                                <p>5/1</p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="2">
-                                <hr>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="2">
-                                <p>Max per month</p>
-                                <input type="range">
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="2">
-                                <p>Max points/credit</p>
-                                <input type="range">
-
-                            </td>
-                        </tr>
+                    <div>
+                        <div class="display-f spacebetween font-small first-child">
+                            <div>
+                                <div class="options pos-rel display-f ai-center ">
+                                    <label class="check-box " for="check-box2">
+                                        <input class="display-n" name="box" type="checkbox" id="check-box2">
+                                        <div class="checkmark greyborder display-ib">
+                                            <span class="checksign check blue-check "></span>
+                                        </div>
 
 
-                    </table>
+                                    </label>
+
+                                    <span class="title">Fixed</span>
+                                </div>
+
+                                <div class="display-f main-list ai-center">
+                                    <input class="display-n" type="checkbox" checked="checked">
+                                    <div class="small-checkbox display-ib green">
+                                        <span class="white-check check"></span>
+                                    </div>
+                                    <span class="font-xsmall">15 Years</span>
+                                </div>
+                                <div class="display-f  main-list ai-center">
+                                    <input class="display-n" type="checkbox" checked="checked">
+                                    <div class="small-checkbox display-ib bright-blue">
+                                        <span class="white-check check"></span>
+                                    </div>
+                                    <span class="font-xsmall">20 Years</span>
+                                </div>
+                                <div class="display-f main-list ai-center">
+                                    <input class="display-n" type="checkbox" checked="checked">
+                                    <div class="small-checkbox display-ib aqua-blue">
+                                        <span class="white-check check"></span>
+                                    </div>
+
+                                    <span class="font-xsmall">30 Years</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="options pos-rel display-f ai-center">
+                                    <label class="check-box " for="check-box1">
+                                        <input class="display-n" type="checkbox" name="box" id="check-box1">
+                                        <div class="checkmark greyborder display-ib">
+                                            <span class="checksign check blue-check ta-center"></span>
+                                        </div>
+
+                                    </label>
+                                    <span class="title">Adjustable</span>
+                                </div>
+
+                                <div class="display-f main-list ai-center">
+                                    <input class="display-n" type="checkbox" checked="checked">
+                                    <div class="small-checkbox display-ib violet">
+                                        <span class="white-check check"></span>
+                                    </div>
+
+                                    <span class="font-xsmall">10/1</span>
+                                </div>
+                                <div class="display-f main-list ai-center">
+                                    <input class="display-n" type="checkbox" checked="checked">
+                                    <div class="small-checkbox display-ib purple">
+                                        <span class="white-check check"></span>
+                                    </div>
+
+                                    <span class="font-xsmall">7/1</span>
+                                </div>
+                                <div class="display-f main-list ai-center">
+                                    <input class="display-n" type="checkbox" checked="checked">
+                                    <div class="small-checkbox display-ib pink">
+                                        <span class="white-check check"></span>
+                                    </div>
+
+                                    <span class="font-xsmall">5/1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="last-child">
+                            <div>
+                                <p class="font-small">Max per month</p>
+
+                                <div class="display-f spacebetween ">
+                                    <input type="range" min="100" max="6400" value="3200" step="100"
+                                        onchange="updateTextInput(this.value);">
+
+                                    <div class="rate-box ta-center">
+                                        <input class="ta-center" type="text" value="$3,200" id="input1">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <p class="font-small">Max points/credit</p>
+
+                                <div class="display-f spacebetween ">
+                                    <input type="range" min="100" max="6400" value="3200" step="100"
+                                        onchange="updateInput(this.value);">
+
+                                    <div class="rate-box ta-center">
+                                        <input class="ta-center" type="text" value="$3,200" id="input2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-
-            </div>
 
         </section>
 
 
         <section class="progressbar container display-n ">
-            <div class="head-progress display-f">
-                <div class="progress display-f">
+            <div class="head-progress display-f spacebetween ai-center">
+                <div class="progress display-f ai-center">
                     <div class="set-size charts-container ">
-                        <div class="pie-wrapper">
-                            <span class="label">60%</span>
-                            <div class="pie">
-                                <div class="other-side  other circle"></div>
-                                <div class="left-side  half circle"></div>
-                                <div class="right-side  half circle"></div>
-                            </div>
+                        <div class="progress-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="140px" width="160px">
+                                <circle class="track" cx="70" cy="70" r="60" />
+                                <circle class="filled" cx="70" cy="70" r="60" />
+
+                            </svg>
+                            <p class="content">60%</p>
+
                         </div>
                     </div>
 
@@ -893,8 +1055,8 @@
 
                 </div>
 
-                <div class="talk-to-us display-f">
-                    <span class="font-small span">Talk to us</span>
+                <div class="talk-to-us display-f spaceevenly">
+                    <span class="font-small dark">Talk to us</span>
                     <hr>
                     <img src="images/arrow.png">
                 </div>
@@ -902,43 +1064,51 @@
 
             <div class="steps">
 
-                <div class="step-box display-f">
+                <div class="step-box display-f spacebetween ai-center">
                     <div class="step-label">
                         <span class="list display-ib">1</span>
                         <span>Personal details</span>
                     </div>
-                    <div class="check">
-
+                    <div class="status display-f ai-center">
+                        <span class="font-small">Edit</span>
+                        <div class="success-check ta-center ">
+                            <div class="check green-check">
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="step-box display-f">
+                <div class="step-box display-f spacebetween ai-center">
                     <div class="step-label">
                         <span class="list display-ib">2</span>
                         <span>Employment & Income</span>
                     </div>
-                    <div class="check">
-
+                    <div class="status display-f ai-center">
+                        <span class="font-small">Edit</span>
+                        <div class="success-check ta-center">
+                            <div class="check green-check">
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="step-box display-f">
+                <div class="step-box display-f spacebetween ai-center">
                     <div class="step-label">
                         <span class="list display-ib">3</span>
                         <span>Adverse events</span>
                     </div>
 
-                    <div class="talk-to-us display-f " id="n-btn5">
-                        <span class="font-small">Get started</span>
+                    <div class="talk-to-us display-f spaceevenly" id="n-btn5">
+                        <span class="font-small ">Get started</span>
                         <hr>
                         <img src="images/arrowwhite.png">
                     </div>
 
                 </div>
 
-                <div class="step-box display-f">
+                <div class="step-box display-f spacebetween ai-center">
                     <div class="step-label">
                         <span class="list display-ib">4</span>
                         <span>Upload Documents</span>
@@ -954,28 +1124,29 @@
 
 
         <section class="final display-n container">
-            
-                <h2 class="font-large fw-bold">Good morning Adrian</h2>
 
-                <div class="final-step display-f">
-                <div class="completion-box ">
+            <h2 class="font-large fw-bold">Good morning Adrian</h2>
 
-                    <div class="progress display-f">
+            <div class="final-step display-f spacebetween">
+                <div class="completion-box spacebetween ">
+
+                    <div class="progress display-f ">
                         <div class="set-size charts-container ">
-                            <div class="pie-wrapper">
-                                <span class="label">60%</span>
-                                <div class="pie">
-                                    <div class="other-side  other circle"></div>
-                                    <div class="left-side  half circle"></div>
-                                    <div class="right-side  half circle"></div>
-                                </div>
+                            <div class="progress-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="140px" width="160px">
+                                    <circle class="track" cx="70" cy="70" r="60" />
+                                    <circle class="filled" cx="70" cy="70" r="60" />
+
+                                </svg>
+                                <p class="content">60%</p>
+
                             </div>
                         </div>
 
                         <div class="successful-notification">
                             <h4>My first home</h4>
                             <p>Great start! You are so close to buying your dream house</p>
-                            <div class="complete-btn display-f"> <span class="font-small">Complete Application</span>
+                            <div class="complete-btn display-f spacebetween"> <span class="font-small">Complete Application</span>
                                 <hr> <img src="images/arrowwhite.png">
                             </div>
                         </div>
@@ -985,7 +1156,7 @@
                 <div class="new-application ">
                     <h4>New application?</h4>
                     <p>Looking for buy or rent? Get started with an idae how much you can afford</p>
-                    <div class="talk-to-us display-f">
+                    <div class="talk-to-us display-f spaceevenly">
                         <span class="font-small">Get started</span>
                         <hr>
                         <img src="images/arrow.png">
@@ -998,7 +1169,7 @@
     </main>
 
     <footer class="footer display-b">
-        <nav class="display-f">
+        <nav class="display-f spacebetween">
             <div class="contacts">
                 <dl>
                     <dt class="font-xsmall lh-normal">Schedule a conversation<br> <span>hello@fairrate.com</span></dt>
@@ -1006,7 +1177,7 @@
                             href="tel:+62 202 555 0117">+62 202 555 0117</a></dd>
                 </dl>
 
-                <div class="contact-logo display-f">
+                <div class="contact-logo display-f spacebetween">
                     <img src="images/twitter.png" alt="twitter">
                     <img src="images/linked-in.png" alt="linkedin">
                     <img src="images/facebook.png" alt="facebook">
@@ -1062,5 +1233,6 @@
 
     <script src="index.js"></script>
 </body>
+
 
 </html>

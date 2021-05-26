@@ -1,77 +1,3 @@
-/* const { table } = require("node:console");
-
-let firstName=document.getElementById("fname");
-let lastName=document.getElementById("lname");
-let myBtn=document.getElementById("btn");
-let nextForm=document.getElementById("tab");
-
-myBtn.addEventListener('click',myFunction);
-
-function myFunction(){
-    var letters = /^[A-Za-z]+$/;
-    if(firstName.value.match(letters) && lastName.value.match(letters)){
-        nextForm.style.display="block";
-       
-    }
-    else{
-        alert("type");
-    }
-}
-
-
-var currentTab = 0; 
-showTab(currentTab); 
-
-function showTab(n) {
-  
-  var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
-} */
-
-
-let btn=document.getElementsByClassName("secondary-button");
-/* btn.addEventListener("click",clickHandler());
-
-function clickHandler(){
-    btn.classList.add("bg-grey");
-    btn.classList.remove("bg-white");
-} 
- */
-/* function changeColor(color,bgcolor){
-    document.body.style.background = bgcolor;
-    document.body.style.color=color
-} */
-
-
-function myFunction(){
-    var x = document.getElementById("upload-file");
-   
-    var txt = "";
-    if ('files' in x) {
-      if (x.files.length == 0) {
-        txt = "";
-      } else {
-        for (var i = 0; i < x.files.length; i++) {
-          var file = x.files[i];
-          if ('name' in file) {
-            txt += "<span>" + file.name + "</span>";
-          }
-          if ('size' in file) {
-            txt += "<span> " + file.size+"</span>" +"uploaded" + "<img  src='images/delete.png'>" ;
-          }
-        }
-        document.getElementById("demo").innerHTML = "<p>"+txt+"</p>"+ "<br/>" + "<hr>";
-      }
-      
-    } 
-   
-   
-  }
-
-
-
-
-
 const firstSlide=document.querySelector(".register");
 const firstBtn=document.querySelector(".next-btn");
 const myFooter=document.querySelector(".footer");
@@ -106,7 +32,6 @@ firstBtn.addEventListener("click",function(){
     if(firstName.value.match(letters) && lastName.value.match(letters)){
     firstSlide.style.display = "none";
     secondSlide.style.display="flex";
-    //thirdSlide.style.display = "none";
     myFooter.style.display = "none";
     }
      else{
@@ -120,8 +45,6 @@ secondBtn1.addEventListener("click",function(){
     var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     
     if(myAddress.value.match(regExp) && myEmail.value.match(mailformat)){
-    //firstSlide.style.display = "none";
-    //secondSlide.style.marginLeft = "-100%";
     thirdSlide.style.display = "block";
     secondSlide.style.display="none";
     myFooter.style.display = "block";
@@ -140,7 +63,6 @@ thirdBtn1.addEventListener("click",function(){
 });
 
 fourthBtn1.addEventListener("click",function(){
-  //fourthSlide.style.marginLeft="-100%";
   fifthSlide.style.display="block";
   fourthSlide.style.display="none";
 });
@@ -159,17 +81,12 @@ sixthBtn1.addEventListener("click",function(){
 
 secondBtn2.addEventListener("click",function(){
     firstSlide.style.display = "block";
-    //thirdSlide.style.display = "block";
-    //firstSlide.style.display="b"
     secondSlide.style.display="none";
     myFooter.style.display = "block";
 });
 
 
 thirdBtn2.addEventListener("click",function(){
-  //secondSlide.style.marginLeft = "0";
-  //thirdSlide.style.display = "block";
-  //firstSlide.style.display="b"
   secondSlide.style.display="flex";
   thirdSlide.style.display="none";
   myFooter.style.display = "none";
@@ -177,119 +94,271 @@ thirdBtn2.addEventListener("click",function(){
 
 
 fourthBtn2.addEventListener("click",function(){
-  //secondSlide.style.marginLeft = "0";
-  //thirdSlide.style.display = "block";
-  //firstSlide.style.display="b"
   thirdSlide.style.display="block";
   fourthSlide.style.display="none";
 });
 
 
-
-
-const check = document.querySelectorAll(".checkmark");
-const border = document.querySelectorAll(".options");
-const toggle=document.querySelector("input[name=box]");
+const Toggle = document.querySelectorAll('.toggle');
+const body = document.querySelectorAll('.options');
 const sign=document.querySelectorAll(".checksign");
-
- for(let i=0;i<check.length;i++){
+const border=document.querySelectorAll(".checkmark");
+for(let i=0;i<Toggle.length;i++){
   let x=i;
-
-  check[x].addEventListener("click",() =>
-  {
-    //checkActive();
-    check[x].classList.remove("greyborder");
-    check[x].classList.add("focus");
-    border[x].classList.add("active");
-    sign[x].classList.add("check");
-    
-  });
-  
-}
-
- 
-
-/* const check = document.querySelectorAll(".checkmark");
-const border = document.querySelectorAll(".options");
-const toggle=document.querySelectorAll("input");
-
-for(let i=0;i<check.length;i++){
-  let x=i; */
- 
-
-/*toggle.addEventListener('input', e => {
+Toggle[x].addEventListener('input', e => {
   const isChecked = e.target.checked;
 
   if (isChecked) {
-      body.classList.add('dark-theme');
+      body[x].classList.add('focus');
+      body[x].classList.remove('greyborder');
+      sign[x].classList.add('blue-check');
+      border[x].classList.add('focus');
+      
   } else {
-      body.classList.remove('dark-theme');
+      body[x].classList.remove('focus');
+      body[x].classList.add('greyborder');
+      sign[x].classList.remove('blue-check');
+      border[x].classList.remove('focus');
   }
-});  */
+})
+};
 
-/* const check = document.getElementById("#check-box1");
-const border = document.querySelectorAll(".ch1");
-check.addEventListener('input', e => {
-  const isChecked = e.target.checked;
-
-  if (isChecked) {
-      border.classList.add('focus');
-  } else {
-      border.classList.remove('focus');
-  }
-});  */
-
-
-
-const checkbox = document.querySelectorAll(".box-alarm");
-const borderBox = document.querySelectorAll(".box1");
-const image=document.querySelectorAll("svg");
+const toggleBox = document.querySelectorAll('.alarmbox');
+const change = document.querySelectorAll('.box1');
 const sign1=document.querySelectorAll(".checksign1");
-//const toggle=document.querySelectorAll("input");
+const border1=document.querySelectorAll(".sign-box");
+const image=document.querySelectorAll(".fill-svg");
 
- for(let i=0;i<checkbox.length;i++){
+for(let i=0;i<toggleBox.length;i++){
   let x=i;
-  checkbox[x].addEventListener("click",() =>{
-  checkbox[x].classList.remove("greyborder");
-  checkbox[x].classList.add("focus"); 
-  borderBox[x].classList.remove("greyborder");
-  borderBox[x].classList.add("active");
-  sign1[x].classList.add("check1");
-  });
-} 
-
-
-/* toggle.addEventListener('input', e => {
+toggleBox[x].addEventListener('input', e => {
   const isChecked = e.target.checked;
 
   if (isChecked) {
-      check.classList.remove('focus');
+      change[x].classList.add('focus');
+      change[x].classList.remove('greyborder');
+      sign1[x].classList.add('blue-check');
+      border1[x].classList.add('focus');
+      image[x].style.fill='#23c0f5';
+      
   } else {
-      check.classList.add('focus');
+      change[x].classList.remove('focus');
+      change[x].classList.add('greyborder');
+      sign1[x].classList.remove('blue-check');
+      border1[x].classList.remove('focus');
+      image[x].style.fill='black';
   }
-});  */
+})
+};
 
-    
-
-/* function clickHandler(){
-  const toggle=document.getElementById("check-box");
-    toggle.addEventListener('input', e => {
-      const isChecked = e.target.checked;
-  
-      if (isChecked) {
-        check[x].classList.remove("greyborder");
-        check[x].classList.add("focus"); 
-        border[x].classList.add("active");
-      } else {
-        check[x].classList.add("greyborder");
-        check[x].classList.remove("focus"); 
-        border[x].classList.remove("active");
-      }
-  })
+const changeborder=document.querySelectorAll(".form-input");
+for(let i=0;i<Toggle.length;i++){
+  let x=i;
+changeborder[x].addEventListener('click', () =>
+{
+changeborder[x].style.border="1px solid #23c0f5";
+})
 };
 
 
 
+class DataList {
+	constructor(containerId, inputId, listId, options) {
+		this.containerId = containerId;
+		this.inputId = inputId;
+		this.listId = listId;
+		this.options = options;
+	}
+
+	create(filter = "") {
+		const list = document.getElementById(this.listId);
+		const filterOptions = this.options.filter(
+			d => filter === "" || d.text.includes(filter)
+		);
+
+		list.innerHTML = filterOptions
+			.map(o => `<li id=${o.value}>${o.text}</li>`)
+			.join("");
+	}
+
+	addListeners(datalist) {
+		const container = document.getElementById(this.containerId);
+		const input = document.getElementById(this.inputId);
+		const list = document.getElementById(this.listId);
+		container.addEventListener("click", e => {
+			if (e.target.id === this.inputId) {
+				container.classList.toggle("active");
+        container.classList.add("focus");
+			} else if (e.target.id === "datalist-icon") {
+				container.classList.toggle("active");
+				input.focus();
+			}
+		});
+
+		input.addEventListener("input", function(e) {
+			if (!container.classList.contains("active")) {
+				container.classList.add("active");
+        
+			}
+
+			datalist.create(input.value);
+		});
+
+		list.addEventListener("click", function(e) {
+			if (e.target.nodeName.toLocaleLowerCase() === "li") {
+				input.value = e.target.innerText;
+				container.classList.remove("active");
+			}
+		});
+	}
+}
+
+const data = [
+	{ value: "1", text: "This month" },
+	{ value: "2", text: "Next Month" },
+	{ value: "3", text: "December 2018" },
+	{ value: "4", text: "January 2019" },
+	{ value: "5", text: "I don't know" }
+];
+
+const datalist = new DataList(
+	"datalist",
+	"datalist-input",
+	"datalist-ul",
+	data
+);
+datalist.create();
+datalist.addListeners(datalist);
 
 
- */
+
+class DragAndDrop {
+  constructor() {
+      this.filesDropped();
+      this.filesChanged();
+  }
+  filesDropped() {
+      let ele = document.querySelectorAll(".drag-drop");
+
+      for (let i = 0; i < ele.length; i++) {
+
+          ele[i].ondragover = ele[i].ondragenter = function(e) {
+              e.preventDefault();
+          };
+
+
+          ele[i].ondrop = (e) => {
+
+              e.preventDefault();
+              let formId = e.target.getAttribute("data-form-id");
+              let formField = e.target.getAttribute("data-form-field");
+              let input = document.querySelector(`form#${formId} input[name='${formField}']`);
+              input.files = e.dataTransfer.files;
+              this.displayFilelist(formId, formField);
+          }
+      }
+  }
+ filesChanged() {
+      let ele = document.querySelectorAll("input.file-input");
+
+      for (let j = 0; j < ele.length; j++) {
+          ele[j].onchange = (e) => {
+              let formId = e.target.getAttribute("data-form-id");
+              let formField = e.target.getAttribute("data-form-field");
+              this.displayFilelist(formId, formField);
+          }
+      }
+  }  
+  displayFilelist(formId, formField) {
+          let files = document.querySelector(`form#${formId} input[name='${formField}']`).files;
+          var fileList = ``;
+         
+
+          for (var i = 0; i < files.length; i++) {
+
+              let fileExt = this.getFileExtension(files[i].name);
+              let fileSize = this.convertBytesTo(files[i].size, 'K', 0);
+              var tag='';
+             
+              //document.getElementById("image").innerHTML= "hi";
+              console.log(fileExt);
+              if(fileExt==="pdf"){
+                
+                tag="images/pdf-color.png";
+              } 
+             else{
+              tag="images/images-color.png";
+              }  
+              fileList = `
+${fileList}
+<div class="files-section display-f spacebetween ai-center">
+<div class="file ta-left display-f spacebetween">
+<div class="file-name ta-left">
+<img src=${tag}>
+${files[i].name}
+</div>
+<div class="file-extension">
+${fileExt}
+</div>
+<div class="file-size">
+${fileSize}
+</div>
+<div>
+<p>UPLOADED</p>
+</div>
+</div> 
+<span onclick="this.parentElement.style.display='none'" class="close" >
+<img   src="images/delete.png">
+</span>
+</div>
+              
+`;
+
+          }
+          //document.getElementById("image").innerHTML="hi";
+          //document.querySelectorAll(".file-list").style.border="1px solid black";
+          document.querySelector(`form#${formId} div.file-list[data-form-field='${formField}']`).innerHTML += fileList;
+
+      }
+      convertBytesTo(bytes, to, decimalPlaces = 2) {
+        if( bytes < 1024){
+          return bytes + " Bytes";
+        }
+      else{
+              switch (to) {     
+                  case 'K':
+                      {
+                          bytes = bytes / 1024  ;
+                         return bytes = +bytes.toFixed(decimalPlaces) + "KB";
+                          break;
+                      }
+                  case 'M':
+                      {
+                          bytes = bytes / 1048576;
+                       return bytes = +bytes.toFixed(decimalPlaces) + "MB";
+                          break;
+                      }
+              }     
+      }
+}
+  
+  getFileExtension(fileName) {
+      return fileName.split('.').pop();
+  }
+}
+var dd = new DragAndDrop(); 
+
+
+
+
+function updateTextInput(val) {
+  document.getElementById('input1').value='$'+val; 
+}
+function updateInput(val) {
+  document.getElementById('input2').value='$'+val; 
+}
+
+
+
+
+

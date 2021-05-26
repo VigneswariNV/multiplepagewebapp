@@ -1,35 +1,23 @@
 .head-progress{
     padding: 29px 100px ;
     background-color: $white;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
-   
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14); 
     .progress-confirmation{
         p{
             color:$greydark;
         }
     }
 }
-
     .talk-to-us{
         width:147px;
-        justify-content: space-evenly;
-        padding: 5px 14px 5px 10px;
+        padding: 12px 10px;
         border-radius: 3px;
         border: solid 2px $lightgrey;
-
-        .span{
-            color:$dark;
-        }
+        @extend %pointer;
     }
-
-
-
 .steps{
     margin:auto;
     padding:100px 0 140px 0;
-
     .list{
         @include size(24px);
         margin-right:10px;
@@ -42,36 +30,38 @@
         background-color: $brightblue;
         border:none;
         color:$white !important;
-
         hr{
             color:$white;
         }
     }
-
     div.step-box:nth-child(4){
         background-color: $transparent;
         color:$paleblack;
-
         .step-label{
             .list{
                 color:$paleblack;
                 border: solid 2px $paleblack;
-
             }
         }
     }
-    
-
     .step-box{
         width:500px;
         margin:auto;
         margin-top:20px;
         padding: 20px;
-        justify-content: space-between;
-        align-items: center;
         background-color: $white;
         border-radius: 3px;
         border: solid 1px $hr;
+        .status{
+            span{
+                color:$pastel-red;
+            }
+        }
+        .success-check{
+            @include size(34px);
+            margin-left:10px;
+            background-color: $bg-green;
+            border-radius:50%;
+        }
     }
-   
 }

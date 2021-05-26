@@ -26,7 +26,6 @@
 }
 
 .lh{
-
     &-small{
         line-height: 1.50;
     }
@@ -36,4 +35,10 @@
     &-medium{
         line-height:2;
     }
+}
+h1,h2,h4{
+    color:$dark;
+}
+h4{
+    font-size:24px;
 }
